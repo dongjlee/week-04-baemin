@@ -1,6 +1,7 @@
 from django.conf.urls import url, include
-from .views import signup
+from .views import index, signup
 
 urlpatterns = [
-    url(r'^$', signup, name="signup")
+    url(r'^$', index, name="index"),
+    url(r'^signup/$', signup, name="signup"),
 ]
